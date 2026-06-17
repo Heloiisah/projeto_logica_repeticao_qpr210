@@ -17,11 +17,17 @@ let acum = 0.0
 btnNum.addEventListener('click', (evt)=>{
     let numDigitado = Number(inputNum.value)
 
+    if (inputNum.value.trim() ==='' || isNaN(numDigitado)) {
+        
+        alert('Por favor, digite um número válido!')
+        
+        return   
+    }
     cont++
     acum += numDigitado
 
     divContAcum.innerHTML = `TOTAL DE NÚMERO DIGITADO É: ${cont} <br> 
-    A SOMA DOS NÚMEROS É: {acum}`
+    A SOMA DOS NÚMEROS É: ${acum}`
 
     inputNum.value=''
 
