@@ -56,3 +56,9 @@ for( i = 0;i < 5;i++){
     divArray.innerHTML += `${presentes[i]} <br>`
 }
 //FOR IN
+const divForIn = document.querySelector('#div-forin')
+
+for(let posicao in presentes){
+    divForIn.innerHTML += `${presentes[posicao]} <br>`
+
+}
