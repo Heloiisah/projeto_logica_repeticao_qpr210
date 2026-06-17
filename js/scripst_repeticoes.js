@@ -17,12 +17,7 @@ let acum = 0.0
 btnNum.addEventListener('click', (evt)=>{
     let numDigitado = Number(inputNum.value)
 
-    if (inputNum.value.trim() ==='' || isNaN(numDigitado)) {
-        
-        alert('Por favor, digite um número válido!')
-        
-        return   
-    }
+    
     cont++
     acum += numDigitado
 
