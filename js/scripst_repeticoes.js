@@ -104,16 +104,13 @@ pessoas.splice(3,2,{nome: 'Extraterrestre', idade: 250, renda: 0.50})
 
 
 //SPLICE EXCLUI DOIS ELEMENTO A PARTIR DA POSIÇÃO (INDÍCE) INFORMADA
-//pessoas.splice (2,2)
+pessoas.splice (2,2)
 
+//EXCLUI O ÚLTIMO ELEMENTO DO ARRAY
+pessoas.pop()
 
-
-
-
-
-
-
-
+//EXIBIR A QUANTIDADE DE ELEMENTOS EM UM ARRAY
+console.log('TOTAL DE ELEMENTOS NO ARRAY pessoas ====>' , pessoas.length)
 
 //LISTANDO OBJETO LITERAL PELO FOR 
 const divListaObjFor = document.querySelector('#div-listaobj-for')
