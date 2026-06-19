@@ -1,3 +1,4 @@
+import {calculoPercentual} from './scripts_calculos.js'
 
 function mensagem() {
     console.log('Uma mensagem')
@@ -105,3 +106,7 @@ DivNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${num
         
     }
 }, 2000)
+
+
+//CHAMADO A FUNÇÃO DE OUTRO ARQUIVO 
+console.log('CÁLCULO DA FUNÇÃO calculoPercentual DO ARQUIVO scripts_calculo.js --->' , calculoPercentual(750))
