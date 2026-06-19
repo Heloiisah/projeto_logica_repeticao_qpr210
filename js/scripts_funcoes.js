@@ -87,7 +87,7 @@ const sorteio = setInterval(()=> {
         contImpar++
     }
 
-DivNumSorteio.innerHTML += `${contVolta}º número gerado $ {numSorteado} - ${numSorteado % 2 == 0 ? 'PAR' : 'IMPAR' } <br>`
+DivNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${numSorteado % 2 == 0 ? 'PAR' : 'IMPAR' } <br>`
 
 
 
