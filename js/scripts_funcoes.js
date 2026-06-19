@@ -29,6 +29,20 @@ const msgArrow = () => {
 console.log('Outra mensagem na arrow function')
 }
 
-msgArrow(
+msgArrow()
 
-)
+    const divisaoNum = (valor1, valor2) => {
+
+        let resposta
+
+        if ((valor1 > 0) && (valor2 > 0)){
+            resposta =  valor1 / valor2
+        }else{
+            resposta = 'NÃO É POSSÍVEL DIVISÃO POR ZERO'
+            
+        }
+
+        return resposta
+    }
+
+console.log(divisaoNum(10,8000))
