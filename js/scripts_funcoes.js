@@ -91,7 +91,7 @@ DivNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${num
 
 
 
-    if (numSorteado == 6) {
+    if (contVolta == 4) {
         console.log('-------> SORTEIO ENCERRADO <-------')
 
         DivNumSorteio.innerHTML += `-------> SORTEIO ENCERRADO <------- <br>
