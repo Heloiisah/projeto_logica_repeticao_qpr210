@@ -46,3 +46,43 @@ msgArrow()
     }
 
 console.log(divisaoNum(10,8000))
+
+console.log(Math.random())
+
+console.log(' O número sorteado =====>' , parseInt (Math.random()* 100))
+
+
+setTimeout(()=>{
+    console.log('Executou após 5s')
+    msgArrow
+}, 5000)
+
+/*
+let cont = 0
+
+const intervalo = setInterval(()=>{
+cont++
+console.log(cont, 'Repetição da setInterval')
+
+if(cont == 5){
+    clearInterval(intervalo)
+}
+
+}, 3000)*/
+
+let contVolta = 0, numSorteado = 0
+
+const sorteio = setInterval(()=> {
+    contVolta++
+
+    numSorteado = parseInt(Math.random() * 60)
+
+    console.log(`${contVolta}º número sorteado ${numSorteado}`)
+
+    if (numSorteado == 6){
+        console.log('-------> SORTEIO ENCERRADO <-------')
+        clearInterval(sorteio)
+        contVolta = 0
+        numSorteado = 0
+    }
+}, 2000)
