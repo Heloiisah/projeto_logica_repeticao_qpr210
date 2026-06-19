@@ -72,20 +72,33 @@ if(cont == 5){
 
 const DivNumSorteio = document.querySelector ('#div-num-sorteio')
 
-let contVolta = 0, numSorteado = 0
+let contVolta = 0, numSorteado = 0 , contPar = 0, contImpar = 0
 
 const sorteio = setInterval(()=> {
     contVolta++
 
     numSorteado = parseInt(Math.random() * 60)
 
-    console.log(`${contVolta}º número sorteado ${numSorteado}`)
+    console.log(`${contVolta}º número sorteado ${numSorteado} `)
 
-    if (numSorteado == 6){
+    if (numSorteado % 2 == 0) {
+        contPar++
+    }else{
+        contImpar++
+    }
+
+DivNumSorteio.innerHTML += `${contVolta}º número gerado $ {numSorteado} - ${numSorteado % 2 == 0 ? 'PAR' : 'IMPAR' } <br>`
+
+
+
+    if (numSorteado == 6) {
         console.log('-------> SORTEIO ENCERRADO <-------')
 
-        DivNumSorteio.innerHTML += '-------> SORTEIO ENCERRADO <------- '
-        clearInterval(sorteio)
+        DivNumSorteio.innerHTML += `-------> SORTEIO ENCERRADO <------- <br>
+        TOTAL DE NÚMEROS GERADOS: ${contVolta}  <br>
+        TOTAL DE NÚMEROS PAR: ${contPar}  <br>
+        TOTAL DE NÚMEROS IMPAR: ${contImpar} <br>
+        `
         contVolta = 0
         numSorteado = 0
     }
