@@ -70,6 +70,8 @@ if(cont == 5){
 
 }, 3000)*/
 
+const DivNumSorteio = document.querySelector ('#div-num-sorteio')
+
 let contVolta = 0, numSorteado = 0
 
 const sorteio = setInterval(()=> {
@@ -81,6 +83,8 @@ const sorteio = setInterval(()=> {
 
     if (numSorteado == 6){
         console.log('-------> SORTEIO ENCERRADO <-------')
+
+        DivNumSorteio.innerHTML += '-------> SORTEIO ENCERRADO <------- '
         clearInterval(sorteio)
         contVolta = 0
         numSorteado = 0
