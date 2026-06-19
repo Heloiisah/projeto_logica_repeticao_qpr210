@@ -101,5 +101,7 @@ DivNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${num
         `
         contVolta = 0
         numSorteado = 0
+        clearInterval(sorteio)
+        
     }
 }, 2000)
